@@ -3,7 +3,7 @@
 * Version: 1.0-dev
 * Date: Not yet released
 
-Naith is a small (~100 loc) php test runner and report generator for the command line.
+Naith is a small (~100 loc) php test runner and report generator (with code coverage) for the command line.
 
 ## Usage
 
