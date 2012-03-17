@@ -25,6 +25,19 @@ Now you can run your tests with:
 
     $ naith run
 
+Result is:
+
+     Running Tests 
+    ===============
+    
+      [OK] my_test.php
+    
+     Code Coverage (for each File)
+    ===============================
+    
+    
+    Everything is tested. Awesome!
+
 That's it.
 
 ## License
