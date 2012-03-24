@@ -81,7 +81,8 @@ if (in_array($action_name, array("make-coverage-overview", "make-untested-code-o
     $report = new NaithCliReport( array(
         'base_directory' => $base_directory,
         'excluded_paths' => $excluded_paths,
-        'coverage_file_path' => $coverage_file_path
+        'coverage_file_path' => $coverage_file_path,
+        'minimum_code_coverage' => $minimum_code_coverage
     ));
 }
 

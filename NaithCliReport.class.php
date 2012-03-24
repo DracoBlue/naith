@@ -24,11 +24,7 @@ class NaithCliReport
         $this->coverage_file_path = $options['coverage_file_path'];
         $this->excluded_paths = $options['excluded_paths'];
         $this->base_directory = $options['base_directory'];
-
-        if (isset($options['minimum_code_coverage']))
-        {
-            $this->minimum_code_coverage = $options['minimum_code_coverage'][0];
-        }
+        $this->minimum_code_coverage = $options['minimum_code_coverage'];
 
         $this->evaluateCoverageFile();
     }

@@ -61,6 +61,11 @@ then
         fi
     done
     
+    if [ ! -f "$raw_code_coverage_file" ]
+    then
+        exit 1
+    fi
+    
     php $naith_directory/naith.php make-coverage-overview $default_options \
         --minimum_code_coverage 100 \
         --excluded_path "$tests_folder" \
