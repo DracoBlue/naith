@@ -58,7 +58,7 @@ class NaithCliRunner
     {
         restore_error_handler();
         list($me, $callee) = debug_backtrace(2);
-        trigger_error($message . ' in ' . $callee['file'] . ' on line ' . $callee['line'] . "\n", E_USER_ERROR);
+        trigger_error($message . ' in ' . $file . ' on line ' . $line . "\n", E_USER_ERROR);
     }
 
     static function onShutdown()
