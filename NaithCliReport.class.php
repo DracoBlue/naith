@@ -122,7 +122,7 @@ class NaithCliReport
             $overall_code_coverage = $this->coverage_file_executed_statements / $this->coverage_file_total_statements;
         }
         
-        if ($this->minimum_code_coverage > $overall_code_coverage * 100)
+        if ($this->coverage_file_total_statements && $this->minimum_code_coverage > $overall_code_coverage * 100)
         {
             echo "" . PHP_EOL;
             echo " Required at least: $this->minimum_code_coverage% code coverage, but had just $overall_code_coverage%!" . PHP_EOL;
