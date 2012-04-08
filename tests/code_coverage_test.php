@@ -54,8 +54,8 @@ assert(file_exists($coverage_file_path));
 assert(file_exists($tests_report_path));
 assert(file_exists($junit_xml_path));
 
-echo shell_exec('php /Volumes/development/workspaces/naith/naith.php make-coverage-overview --coverage_file_path ' . $coverage_file_path . ' --base_directory ' . $base_directory . ' --excluded_path ' . dirname(__FILE__));
-$untested_code = shell_exec('php /Volumes/development/workspaces/naith/naith.php make-untested-code-overview --coverage_file_path ' . $coverage_file_path . ' --base_directory ' . $base_directory . ' --excluded_path ' . dirname(__FILE__));
+echo shell_exec('php ' . $naith_executable . ' make-coverage-overview --coverage_file_path ' . $coverage_file_path . ' --base_directory ' . $base_directory . ' --excluded_path ' . dirname(__FILE__));
+$untested_code = shell_exec('php ' . $naith_executable . ' make-untested-code-overview --coverage_file_path ' . $coverage_file_path . ' --base_directory ' . $base_directory . ' --excluded_path ' . dirname(__FILE__));
 
 echo $untested_code;
 $untested_lines = array_slice(explode(PHP_EOL, $untested_code), 4, -1);
