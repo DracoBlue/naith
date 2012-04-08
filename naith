@@ -19,7 +19,7 @@ fi
 
 if [ "$action_name" == "help" ]
 then
-    echo "naith 1.0.0"
+    echo "naith 1.1.0"
     exit 0
 fi
 
