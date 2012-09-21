@@ -86,6 +86,7 @@ then
         --minimum_code_coverage 100 \
         --excluded_path "$tests_folder" \
         --excluded_path "$naith_directory/" \
+        --excluded_path "$current_directory/vendor/" \
         --excluded_path "$current_directory/_before_naith.php"
         
     current_exit_code="${?}"
@@ -95,6 +96,7 @@ then
             --minimum_code_coverage 100 \
             --excluded_path "$tests_folder" \
             --excluded_path "$naith_directory/" \
+            --excluded_path "$current_directory/vendor/" \
             --excluded_path "$current_directory/_before_naith.php"
             
         echo ""

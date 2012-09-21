@@ -1,7 +1,7 @@
 # naith
 
-* Version: 1.1.0
-* Date: 2012/04/08
+* Version: 1.1.1
+* Date: 2012/09/21
 * Build Status: [![Build Status](https://secure.travis-ci.org/DracoBlue/naith.png?branch=master)](http://travis-ci.org/DracoBlue/naith), 100% Code Coverage
 
 
@@ -44,6 +44,8 @@ That's it.
 
 ## Changelog
 
+- 1.1.1 (2012/09/21)
+  - ignore vendor folder
 - 1.1.0 (2012/04/08)
   - junit.xml generation added
 - 1.0.0 (2012/03/25)
