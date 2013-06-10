@@ -1,5 +1,5 @@
 {
-    "name": "DracoBlue/naith",
+    "name": "dracoblue/naith",
     "version": "1.1.1",
     "description": "A simple php test runner, without the bloat of other frameworks.",
     "keywords": [ "testing" ],
